@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_addData"
+            android:text="Add Data"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_bg"
+            android:textSize="@dimen/_15sdp"
+            android:backgroundTint="#ef385a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+
+        <ListView
+            android:id="@+id/listview_ShowData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteScreenActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Add Data Note"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/white"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Name"
+            android:textColor="#777777"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <EditText
+            android:id="@+id/txt_dataName"
+            android:background="@drawable/text_bg"
+            android:hint="Name"
+            android:inputType="text"
+            android:padding="@dimen/_8sdp"
+            android:textColor="#777777"
+            android:textColorHint="#777777"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Description"
+            android:textColor="#777777"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <EditText
+            android:id="@+id/txt_dataDesc"
+            android:background="@drawable/text_bg"
+            android:hint="Hello...."
+            android:inputType="textMultiLine"
+            android:padding="@dimen/_8sdp"
+            android:textAlignment="viewStart"
+            android:textColor="#777777"
+            android:textColorHint="#777777"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:text="Upload Image"
+            android:textColor="#777777"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@drawable/text_bg"
+            android:id="@+id/img_dataImage"
+            android:src="@drawable/imageupload"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"></ImageView>
+
+        <Button
+            android:id="@+id/btn_dataSave"
+            android:text="Save Data"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
